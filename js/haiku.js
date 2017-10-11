@@ -5,7 +5,8 @@ export class Haiku {
     this.line3 = line3;
   }
 
-  // checkType() {
-  // //Function body goes here.
-  // }
-}
+  vowelCount(line) {
+    let vowelCount = line.match(/[aeiouy]/ig).length;
+    return vowelCount;
+  }
+};

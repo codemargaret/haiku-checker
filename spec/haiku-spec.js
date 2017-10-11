@@ -11,4 +11,9 @@ let newHaiku;
     expect(newHaiku.line2) .toEqual("")
     expect(newHaiku.line3) .toEqual("")
   });
+
+  it('count vowels in a line', function(){
+    let vowelNum = newHaiku.vowelCount("good butts are squishy")
+    expect(vowelNum) .toEqual(8)
+  });
 });
