@@ -6,7 +6,7 @@ export class Haiku {
   }
 
   vowelCount(line) {
-    let vowelCount = line.match(/[aeiouy]/ig).length;
+    let vowelCount = line.match(/[aeiouy]{1,2}/ig).length;
     return vowelCount;
   }
 
@@ -18,7 +18,7 @@ export class Haiku {
     splitLine.forEach(function(word) {
       let vowelNum = that.vowelCount(word);
       if (vowelNum === 1) {
-        syllableCounter += 1; // return true; // one silabul
+        syllableCounter += 1;
       }
     });
     return syllableCounter;
