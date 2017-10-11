@@ -18,7 +18,12 @@ let newHaiku;
   });
 
   it('identifies words with one vowel or vowel team as one syllable words', function(){
-    let words = newHaiku.oneVowelWord("i have a great butt")
+    let words = newHaiku.oneVowelWord("I have a great butt")
     expect(words) .toEqual(4)
+  })
+
+  it('identifies a word with a silent e as a one syllable word', function(){
+    let words = newHaiku.silentE("You have a cute butt")
+    expect(words) .toEqual(5)
   })
 });

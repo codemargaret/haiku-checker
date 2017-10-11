@@ -23,4 +23,14 @@ export class Haiku {
     });
     return syllableCounter;
   }
+
+  silentE(line) {
+    let splitLine = line.split(" ");
+    let syllableCounter = 0;
+    let that = this;
+    splitLine.forEach(function(word) {
+      word.slice("e")
+    });
+    return syllableCounter;
+  }
 }
