@@ -16,4 +16,9 @@ let newHaiku;
     let vowelNum = newHaiku.vowelCount("good butts are squishy")
     expect(vowelNum) .toEqual(8)
   });
+
+  it('identifies words with one vowel as one syllable words', function(){
+    let words = newHaiku.oneVowelWord("i have a great butt")
+    expect(words) .toEqual(3)
+  })
 });

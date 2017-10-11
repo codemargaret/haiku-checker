@@ -9,4 +9,18 @@ export class Haiku {
     let vowelCount = line.match(/[aeiouy]/ig).length;
     return vowelCount;
   }
-};
+
+  oneVowelWord(line) {
+    let splitLine = line.split(" ");
+    let oneVowelWords = [];
+    let syllableCounter = 0;
+    let that = this;
+    splitLine.forEach(function(word) {
+      let vowelNum = that.vowelCount(word);
+      if (vowelNum === 1) {
+        syllableCounter += 1; // return true; // one silabul
+      }
+    });
+    return syllableCounter;
+  }
+}
