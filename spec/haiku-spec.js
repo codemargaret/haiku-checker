@@ -33,7 +33,6 @@ let newPoem;
   });
 
   it('create a new poem type', function(){
-
     expect(newPoem.type) .toEqual("")
   })
 });

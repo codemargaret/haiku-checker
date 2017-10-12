@@ -7,7 +7,28 @@
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Haiku</title>
   </head>
-  <body>
 
+  <body>
+  <div class="container">
+
+    <form id="haiku">
+      <label for="line1">Enter a Poem</label>
+      <input id = "line1" name="line1" type="text">
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+    <p>Poem Entries:</p>
+    <div id="entries">
+    </div>
+
+    <div id="yeshaiku">
+      <p>This poem is a haiku.</p>
+    </div>
+
+    <div id="nohaiku">
+      <p>This poem is NOT a haiku.</p>
+    </div>
+
+  </div>
   </body>
 </html>

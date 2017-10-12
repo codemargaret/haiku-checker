@@ -1,19 +1,19 @@
 {
-  "name": "haiku-checker",
-  "description": "#### _An application that checks if a completed haiku puzzle is “legal.”, 10.11.2017_",
+  "name": "haiku",
+  "description": "#### _An application that checks if a completed haiku is “legal.”, 10.11.2017_",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/margaret85/haiku-checker",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
   "dependencies": {
-    "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
-    "moment": "^2.18.1"
-
+    "jquery": "^3.2.1",
+    "moment": "^2.19.1"
+  }
 }
