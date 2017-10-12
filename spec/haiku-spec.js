@@ -24,6 +24,6 @@ let newHaiku;
 
   it('identifies a word with a silent e as a one syllable word', function(){
     let words = newHaiku.silentE("You have a cute butt")
-    expect(words) .toEqual(5)
+    expect(words) .toEqual(["You", "hav", "a", "cut", "butt"])
   })
 });

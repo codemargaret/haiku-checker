@@ -26,11 +26,16 @@ export class Haiku {
 
   silentE(line) {
     let splitLine = line.split(" ");
-    let syllableCounter = 0;
-    let that = this;
+    let newArray = [];
     splitLine.forEach(function(word) {
-      word.slice("e")
+      if (word[word.length-1] === "e") {
+        let newWord = word.slice(0,-1);
+        newArray.push(newWord);
+      } else {
+        let newWord = word;
+        newArray.push(newWord);
+      }
     });
-    return syllableCounter;
+    return newArray;
   }
 }

@@ -1,4 +1,4 @@
-// import { Triangle } from './../js/triangle.js';
+import { Haiku } from './../js/haiku.js';
 
 $(document).ready(function(){
     event.preventDefault();
