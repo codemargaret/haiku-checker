@@ -1,15 +1,13 @@
-import { Haiku } from './../js/haiku.js';
+import { Haiku, Poem} from './../js/haiku.js';
 
 describe('Haiku', function(){
 let newHaiku;
   beforeEach(function(){
-    newHaiku = new Haiku("","","")
+    newHaiku = new Haiku('',"")
   });
 
   it('create a new poem with three lines', function(){
-    expect(newHaiku.line1) .toEqual("")
-    expect(newHaiku.line2) .toEqual("")
-    expect(newHaiku.line3) .toEqual("")
+    expect(newHaiku.line) .toEqual("")
   });
 
   it('count vowels and vowel teams in a line', function(){
@@ -25,5 +23,17 @@ let newHaiku;
   it('identifies a word with a silent e as a one syllable word', function(){
     let words = newHaiku.silentE("You have a cute butt")
     expect(words) .toEqual(["You", "hav", "a", "cut", "butt"])
+  })
+});
+
+describe('Poem', function(){
+let newPoem;
+  beforeEach(function(){
+    newPoem = new Poem("")
+  });
+
+  it('create a new poem type', function(){
+
+    expect(newPoem.type) .toEqual("")
   })
 });

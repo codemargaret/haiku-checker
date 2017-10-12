@@ -1,4 +1,4 @@
-import { Haiku } from './../js/haiku.js';
+import { Haiku, Poem } from './../js/haiku.js';
 
 $(document).ready(function(){
     event.preventDefault();
