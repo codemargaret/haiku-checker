@@ -1,6 +1,6 @@
 # _Haiku_
 
-#### _An application that checks if a completed Haiku puzzle is “legal.”, 10.11.2017_
+#### _An application that checks if a completed Haiku puzzle is “legal”, 10.12.2017_
 
 #### By _**Margaret Berry & Gabrijela Gavric**_
 
